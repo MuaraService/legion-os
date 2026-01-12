@@ -29,6 +29,8 @@ modules:
     install:
       packages:
         - starship
+        
+  - type: dnf
     remove:
       packages:
         - firefox
