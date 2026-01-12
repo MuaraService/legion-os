@@ -55,6 +55,21 @@ modules:
     update-wait-after-boot: 1h
     upgrade-wait-after-boot: 2h
 
+## Fonts Module ##
+  - type: fonts
+    fonts:
+     nerd-fonts:
+        - FiraCode
+        - Hack
+        - JetBrainsMono
+        - CascadiaCode
 
 ## Image Build Modules ##
+  - type: os-release
+    properties:
+      ID: fedora
+      NAME: legion-os
+      PRETTY_NAME: legion-os by legionlabs
+
+  - type: initramfs
   - type: signing
