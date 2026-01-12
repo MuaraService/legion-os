@@ -40,8 +40,7 @@ modules:
       - notify: false
         scope: system
         install:
-          - org.mozilla.firefox
-          - org.gnome.Loupe
+          - io.github.kolunmi.Bazaar
       - scope: user
 
 ## Brew Module ##
