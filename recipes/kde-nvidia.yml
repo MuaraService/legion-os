@@ -53,15 +53,8 @@ modules:
         - nvtop
         - firefox
         - firefox-langpacks
-
-## Default-flatpaks Module ##
-  - type: default-flatpaks
-    configurations:
-      - notify: false
-        scope: system
-        install:
-          - io.github.kolunmi.Bazaar
-      - scope: user
+        - plasma-welcome
+        - fedora-workstation-backgrounds
 
 ## Brew Module ##
   - type: brew
@@ -87,6 +80,7 @@ modules:
   - type: script
     scripts:
       - install-vscode.sh
+      - install-default-flatpak.sh
 
 
 ## Image Build Modules ##
