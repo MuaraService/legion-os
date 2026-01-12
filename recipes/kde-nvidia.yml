@@ -32,6 +32,15 @@ modules:
         - neovim
         - mangohud
         - steam-devices
+        - plasma-desktop
+        - plasma-pa
+        - plasma-nm
+        - sddm
+        - kscreen
+        - kde-gtk-config
+        - plasma-workspace
+        - dolphin
+        - ptyxis
 
   - type: dnf
     remove:
