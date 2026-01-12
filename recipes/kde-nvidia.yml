@@ -29,10 +29,16 @@ modules:
     install:
       packages:
         - starship
-        
+        - neovim
+        - mangohud
+        - steam-devices
+
   - type: dnf
     remove:
       packages:
+        - nano
+        - htop
+        - nvtop
         - firefox
         - firefox-langpacks
 
