@@ -4,13 +4,10 @@
 #############################
 ## Image info & Properties ##
 #############################
-
 name: legion-os-kde-nvidia
-description: This is my personal OS image.
-
+description: legion-os by legionlabs (KDE Plasma & Nvidia).
 base-image: ghcr.io/ublue-os/base-nvidia
 image-version: latest
-
 platforms:
   - linux/amd64
 
@@ -18,7 +15,6 @@ platforms:
 ## Modules ##
 #############
 modules:
-
 ## Files Module ##
   - type: files
     files:
@@ -47,6 +43,11 @@ modules:
           - org.mozilla.firefox
           - org.gnome.Loupe
       - scope: user
+
+## Brew Module ##
+  - type: brew
+    nofile-limits: true
+    brew-analytics: false
 
 ## Image Build Modules ##
   - type: signing
