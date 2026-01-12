@@ -48,6 +48,13 @@ modules:
   - type: brew
     nofile-limits: true
     brew-analytics: false
+    auto-update: true
+    auto-upgrade: true
+    update-interval: 8h
+    upgrade-interval: 12h
+    update-wait-after-boot: 1h
+    upgrade-wait-after-boot: 2h
+
 
 ## Image Build Modules ##
   - type: signing
